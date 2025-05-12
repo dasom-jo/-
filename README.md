@@ -4,14 +4,14 @@ React + TypeScript 기반으로 다양한 데이터 처리 UX를 실습합니다
 
 ## 구현 목록
 
-- [x] Infinite Scroll
-- [x] Pagination
-- [x] Virtual Scroll
-- [x] Debounced Search
-- [x] Skeleton Loading
-- [x] Lazy Loading
-- [x] Prefetching
-- [x] SWR (Stale-While-Revalidate)
+- [ ] Infinite Scroll
+- [ ] Pagination
+- [ ] Virtual Scroll
+- [ ] Debounced Search
+- [ ] Skeleton Loading
+- [ ] Lazy Loading
+- [ ] Prefetching
+- [ ] SWR (Stale-While-Revalidate)
 
 ## 실행 방법
 
