@@ -1,3 +1,20 @@
-프론트엔드 개발은 겉으로 보이는 ui/ux말고도 효율적인 내부 데이터 처리 방법이 중요합니다.
+# 프론트엔드 데이터 처리 기법 모음
 
-이 레포는 다양한 동적 데이터 처리 기법을 연습하는 레포입니다. 
+React + TypeScript 기반으로 다양한 데이터 처리 UX를 실습합니다.
+
+## 구현 목록
+
+- [x] Infinite Scroll
+- [x] Pagination
+- [x] Virtual Scroll
+- [x] Debounced Search
+- [x] Skeleton Loading
+- [x] Lazy Loading
+- [x] Prefetching
+- [x] SWR (Stale-While-Revalidate)
+
+## 실행 방법
+
+```bash
+npm install
+npm run dev
