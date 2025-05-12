@@ -4,14 +4,30 @@ React + TypeScript 기반으로 다양한 데이터 처리 UX를 실습합니다
 
 ## 구현 목록
 
-- [ ] Infinite Scroll
-- [ ] Pagination
-- [ ] Virtual Scroll
-- [ ] Debounced Search
-- [ ] Skeleton Loading
-- [ ] Lazy Loading
-- [ ] Prefetching
-- [ ] SWR (Stale-While-Revalidate)
+- [ ] **Infinite Scroll** : 사용자가 스크롤을 내릴 때마다 다음 데이터를 자동으로 불러오는 방식.
+페이징 버튼 없이 자연스럽게 콘텐츠를 계속 노출할 수 있음.
+ 예시: 인스타그램, 페이스북 피드
+- [ ] **Pagination** : 데이터를 일정 단위로 나눠 페이지별로 보여주는 방식.
+?page=2&limit=10 같은 API와 함께 사용.
+ 예시: 쇼핑몰 상품 목록, 검색 결과 페이지
+- [ ] **Virtual Scroll** : 실제로 보이는 항목만 렌더링하고 나머지는 DOM에서 제거하여
+수천 개의 데이터도 빠르게 스크롤 가능하게 만드는 기법.
+ 예시: 대용량 테이블 UI, Excel 웹 구현
+- [ ] **Debounced Search** : 사용자가 입력을 멈춘 후 일정 시간 뒤에만 검색 요청을 보내는 방식.
+API 요청 과잉을 줄이고 성능을 최적화함.
+ 예시: 자동완성 검색창
+- [ ] **Skeleton Loading** : 콘텐츠가 로딩 중일 때 실제 레이아웃과 유사한 회색 블록 등을 먼저 보여주는 방식.
+사용자에게 더 빠른 로딩 인상을 줄 수 있음.
+ 예시: 유튜브 썸네일, 블로그 카드 로딩 화면
+- [ ] **Lazy Loading** : 사용자가 실제로 보게 되는 시점에 데이터를 불러오거나 이미지를 로딩하는 방식.
+불필요한 초기 로딩을 줄여 성능 최적화.
+ 예시: 이미지 갤러리, 긴 페이지에서의 이미지 로딩
+- [ ] **Prefetching** : 사용자가 이동할 가능성이 높은 페이지나 데이터를 미리 로드해두는 방식.
+전환 시점에서 즉시 표시되므로 UX가 개선됨.
+ 예시: Next.js의 <Link prefetch>, 추천 검색어 미리 불러오기
+- [ ] **SWR (Stale-While-Revalidate)** : 캐시된 데이터를 우선 보여주고, 백그라운드에서 최신 데이터를 불러오는 전략.
+UX와 데이터 신선도를 동시에 만족시킴.
+ 예시: React Query, SWR 라이브러리 사용 시 기본 전략
 
 ## 실행 방법
 
