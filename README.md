@@ -1,6 +1,6 @@
 # 프론트엔드 데이터 처리 기법 모음
 
-React + TypeScript 기반으로 다양한 데이터 처리 UX를 실습합니다.
+React + JavaScript 기반으로 다양한 데이터 처리 UX를 실습합니다.
 
 ## 구현 목록
 
