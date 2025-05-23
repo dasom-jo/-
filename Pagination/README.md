@@ -1,32 +1,46 @@
-# 🎞️ Infinite Scroll - Top Rated Movies
+# 🎬 Top Rated Movies - Pagination
 
-무한스크롤을 구현한 React 프로젝트입니다.
-The Movie Database(TMDB) API를 사용하여 인기 높은 영화 목록을 페이지 단위로 가져오고,
-스크롤이 하단에 도달할 때마다 다음 페이지를 자동으로 요청합니다.
+TMDB API를 활용해 상위 평점 영화를 받아오고, React Query를 사용하여 **버튼 기반 페이지네이션**을 구현한 예제입니다.
 
----
+## 🔍 주요 기능
 
-## ✅ 기능 소개
+- TMDB API 연동
+- React Query를 사용한 데이터 페칭 및 캐싱
+- `useQuery`를 활용한 페이지네이션
+- `Prev`, `Next` 버튼을 통한 페이지 이동
+- API 에러 및 로딩 상태 처리
 
-- [x] **Infinite Scroll**
-  사용자가 스크롤을 내릴 때마다 다음 데이터를 자동으로 불러오는 방식.
-  페이징 버튼 없이 자연스럽게 콘텐츠를 계속 노출할 수 있음.
-  예시: 인스타그램, 페이스북 피드
+## 🛠 사용 기술
 
-- [x] **React Query (`useInfiniteQuery`)**를 이용한 효율적인 페이징 데이터 처리
-- [x] **react-intersection-observer**를 이용해 스크롤 감지
+- React
+- React Query (`@tanstack/react-query`)
+- TMDB API (v4 인증 방식)
+- JavaScript (ES6+)
 
----
+## 🖥 실행 방법
 
-## 🚀 실행 방법
+1. 레포지토리 클론
 
 ```bash
-# 1. 저장소 클론 및 이동
-git clone [레포주소]
-cd infinite-scroll
+git clone https://github.com/your-id/top-rated-movies-pagination.git
+cd top-rated-movies-pagination
+```
+## 📂 디렉토리 구조
+src/
+├── hooks/
+│   └── useGetTopRateMovies.js  # 페이지별 영화 데이터 요청 로직
+├── components/
+│   └── MovieList.jsx           # 버튼 기반 페이지네이션 UI
+├── App.js
+├── index.js
+public/
+└── index.html
 
-# 2. 패키지 설치
-npm install
+## 구현 내용 요약
+- React Query의 useQuery를 사용하여 page 상태 기반 요청
 
-# 3. 환경 변수 등록
-touch .env
+- API 요청 시 Authorization: Bearer ${API_KEY} 헤더 사용
+
+- keepPreviousData 옵션으로 페이지 이동 시 데이터 깜빡임 방지
+
+- 로딩/에러/데이터 페칭 상태를 각각 처리
