@@ -27,13 +27,21 @@ cd top-rated-movies-pagination
 ```
 ## 📂 디렉토리 구조
 src/
+
 ├── hooks/
+
 │   └── useGetTopRateMovies.js  # 페이지별 영화 데이터 요청 로직
+
 ├── components/
+
 │   └── MovieList.jsx           # 버튼 기반 페이지네이션 UI
+
 ├── App.js
+
 ├── index.js
+
 public/
+
 └── index.html
 
 ## 구현 내용 요약
